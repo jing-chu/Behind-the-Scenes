@@ -1,0 +1,30 @@
+.search {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 20vh;
+    font-size: 18px;
+    color:$primary-text;
+    background-color: $primary-color;
+    
+}
+.searchlab {
+    width:100%;
+    padding:10px;
+}
+.userinfo {
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+label {
+    width: 20%;
+    font-weight:550;
+}
+
+.name{
+    margin-left: 10px;
+    margin-right:10px;
+    margin-top:10px;
+}

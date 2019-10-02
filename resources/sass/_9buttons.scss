@@ -1,0 +1,16 @@
+.users {
+    margin: 4px 0px 4px 0px;
+    cursor: pointer;
+    height: 2rem;
+    width: 6rem;
+    //color: $primary-text;
+    border:1px solid $primary-color;
+}
+.twitter {
+    height: 2rem;
+    margin: 4px 0px 4px 0px;
+    cursor: pointer;
+    background-color: $icons;
+    border: 2px solid $icons;
+    border-radius: 70%;
+}
