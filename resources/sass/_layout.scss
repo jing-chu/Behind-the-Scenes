@@ -3,7 +3,6 @@
     flex-direction: column;
     width:70vw;
     height:90vh;
-    border: 1px solid red;
 }
 
 
@@ -32,34 +31,81 @@
     width:70vw; 
     height:60vh;
     flex-wrap: wrap;
-    border: 1px solid red;
-    
+    padding-left:1rem;
 }
 
 .contract{
     display:flex;
     width:33vw;
-    border: 1px solid red;
-    margin: 10px;
+    height:50%;
+    background-color: $primary-color;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right:10px;
 }
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    background-color: $primary-color;
+    color:$primary-text;
+}
+
+.icons{
+    width: 40%;
+    font-size: 8rem;
+    text-align: center;
+    color:$icons;
+    margin: auto 0;
+}
+
+h2{
+    color:$primary-text;
+    margin:0;
+}
+
+select{
+    width: 10rem;
+    margin-top:1rem;
+    background-color: $primary-color;
+    color:$primary-text;
+}
+
+button{
+    margin-top:0.5rem;
+    background-color: $primary-color;
+    color:$primary-text;
+    border-radius: 10px;
+}
+
+button:hover{
+        background-color: $primary-text;
+        color:$primary-color;   
+}
+
 
 .absence{
     display:flex;
     width:33vw;
-    border: 1px solid red;
-    margin: 10px;
+    height:50%;
+    background-color: $primary-color;
+    border-radius: 5px;
 }
 
-.payroll{
+.CV{
     display:flex;
     width:33vw;
-    border: 1px solid red;
-    margin: 10px;
+    background-color: $primary-color;
+    border-radius: 5px;
+    margin-right:10px;
 }
 
 .expenses{
     display:flex;
     width:33vw;
-    border: 1px solid red;
-    margin: 10px;
+    height:50%;
+    background-color: $primary-color;
+    border-radius: 5px;
 }
