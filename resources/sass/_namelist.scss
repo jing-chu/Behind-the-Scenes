@@ -1,0 +1,19 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    min-height: 20vh;
+    font-size: 18px;
+}
+.searchlab {
+    width:100%;
+}
+.userinfo {
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+label {
+    width: 20%;
+    font-weight:550;
+}

@@ -4,26 +4,24 @@
     width:70vw;
     height:90vh;
     border: 1px solid red;
+    margin:0 auto;
 }
-
-
-
 .nine-buttons{
     display:flex;
     flex-direction: row;
+    justify-content: space-evenly;
     width:68vw;  
     height:10vh;
     margin: 10px;
-    border: 1px solid red;
 }
 
 .name-lists{
     display:flex;
     flex-direction: row;
-    width:68vw; 
-    height:30vh;
+    width:68vw;
+    max-height: 20vh;
     margin: 10px;
-    border: 1px solid red;
+    background-color: rgb(17, 105, 221);
 }
 
 .four-documents{
