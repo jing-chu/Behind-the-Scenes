@@ -18,9 +18,22 @@
   display: flex;
   flex-direction: row;
   width: 66vw;
-  max-height: 20vh;
+  max-height: 60vh;
   margin-bottom: 10px;
   border: 1px solid #243544;
+  position: relative;
+}
+
+.select-all-btn {
+  height: 2rem;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+#select-all {
+  background-color: #f2eff2;
+  color: #243544;
 }
 
 .four-documents {
@@ -65,7 +78,7 @@ h2 {
 
 select {
   width: 10rem;
-  margin-top: 1rem;
+  margin-top: 6px;
   background-color: #f0f4f7;
   color: #243544;
 }
@@ -75,7 +88,7 @@ button {
   background-color: #243544;
   color: #f2eff2;
   border-radius: 10px;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 button:hover {
@@ -94,6 +107,7 @@ button:hover {
 .CV {
   display: flex;
   width: 33vw;
+  height: 50%;
   background-color: #f0f4f7;
   border-radius: 5px;
   margin-right: 10px;
@@ -111,7 +125,7 @@ button:hover {
   margin: 4px 0px 4px 0px;
   cursor: pointer;
   height: 2rem;
-  width: 6rem;
+  width: 7rem;
   border: 1px solid #243544;
 }
 
@@ -124,6 +138,54 @@ button:hover {
   border-radius: 70%;
 }
 
+.fa-facebook {
+  position: relative;
+  font-size: 1.5rem;
+  color: #243544;
+  margin: 6px 0;
+}
+
+.fa-facebook:hover .tooltiptext {
+  visibility: visible;
+}
+
+.fa-twitter-square:hover .tooltiptext {
+  visibility: visible;
+}
+
+.fa-envelope:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 4rem;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.fa-twitter-square {
+  position: relative;
+  font-size: 1.5rem;
+  color: #243544;
+  margin: 6px 0;
+}
+
+.fa-envelope {
+  position: relative;
+  font-size: 1.5rem;
+  color: #243544;
+  margin: 6px 0;
+}
+
 .search {
   display: flex;
   flex-direction: column;
@@ -133,15 +195,11 @@ button:hover {
   background-color: #243544;
 }
 
-.searchlab {
-  width: 100%;
-  padding: 10px;
-}
-
 .userinfo {
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 label {

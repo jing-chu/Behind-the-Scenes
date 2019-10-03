@@ -2,8 +2,7 @@
     margin: 4px 0px 4px 0px;
     cursor: pointer;
     height: 2rem;
-    width: 6rem;
-    //color: $primary-text;
+    width: 7rem;
     border:1px solid $primary-color;
 }
 .twitter {
@@ -13,4 +12,55 @@
     background-color: $icons;
     border: 2px solid $icons;
     border-radius: 70%;
+}
+
+.fa-facebook{
+    position: relative;
+    font-size: 1.5rem;
+    color:$primary-color;
+    margin:6px 0;
+
+    
+}
+
+.fa-facebook:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .fa-twitter-square:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .fa-envelope:hover .tooltiptext {
+    visibility: visible;
+  }  
+
+.tooltiptext{
+    visibility: hidden;
+    width: 4rem;
+    color:$white;
+    background-color: $black;
+    text-align: center;
+    font-size: 15px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+
+}
+
+.fa-twitter-square{
+    position: relative;
+    font-size: 1.5rem;
+    color:$primary-color;
+    margin:6px 0;
+}
+
+.fa-envelope{
+    position: relative;
+    font-size: 1.5rem;
+    color:$primary-color;
+    margin:6px 0;
 }

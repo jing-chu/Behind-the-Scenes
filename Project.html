@@ -18,41 +18,72 @@
             <button class="users">Opening Hours</button>
             <button class="users">Language</button>
             <button class="users">Members</button>
-            <input class="twitter" type="image" src="resources/gmail.svg">
-            <input class="twitter" type="image" src="resources/facebook.svg">
-            <input class="twitter" type="image" src="resources/twitter.svg">
+            <a href="#"><i class="fab fa-facebook">
+                <span class="tooltiptext">Facebook</span>
+            </i></a>
+            <a href="#"><i class="fab fa-twitter-square">
+                <span class="tooltiptext">Twitter</span>
+            </i></a>
+            <a href="#"><i class="fas fa-envelope">
+                <span class="tooltiptext">Email</span>
+            </i></a>
         </div> 
 <!--name-lists-->
-           <div class="name-lists">
-              <div class="search"><form action=""><input class="name" type="search"></form>
-                <label class="searchlab"><input type="radio" name="type" value="group"> group</label>
-                <label class="searchlab"><input type="radio" value="campus" name="type" id=""> campus </label>
+          <div class="name-lists">
+              <div class="search">
+                <form action=""><input class="name" type="search" value="Search"></form>
+                <ul style="list-style-type:none;">
+                    <li><input type="checkbox" name="campus">Genk
+                        <ul style="list-style-type:none;">
+                            <li><input type="checkbox" name="group">Easley</li>
+                            <li><input type="checkbox" name="group">Hopper</li>
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" name="campus">Brussels
+                        <ul style="list-style-type:none;">
+                            <li><input type="checkbox" name="group">Group 1</li>
+                            <li><input type="checkbox" name="group">Group 2</li>
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" name="campus">Antwerpen
+                        <ul style="list-style-type:none;">
+                            <li><input type="checkbox" name="group">Group 3</li>
+                            <li><input type="checkbox" name="group">Group 4</li>
+                        </ul>
+                    </li>
+                </ul>
               </div>
+
               <div class="userinfo">
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Jing</label>
-                <label><input class="names" type="checkbox">Katrien</label>
-                <label><input class="names" type="checkbox">Aldo</label>
-                <label><input class="names" type="checkbox">Mansur</label>
-                <label><input class="names" type="checkbox">Axel</label>
-                <label><input class="names" type="checkbox">Kris</label>
-                <label><input class="names" type="checkbox">Laurens</label>
-                <label><input class="names" type="checkbox">Sean</label>
-                <label><input class="names" type="checkbox">Zeger</label>
-                <label><input class="names" type="checkbox">Luna</label>
-                <label><input class="names" type="checkbox">Mitchell</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-                <label><input class="names" type="checkbox">Korneel</label>
-               </div>
+                
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Jing</label>
+                    <label><input class="names" type="checkbox">Katrien</label>
+                    <label><input class="names" type="checkbox">Aldo</label>
+                    <label><input class="names" type="checkbox">Mansur</label>
+                    <label><input class="names" type="checkbox">Axel</label>
+                    <label><input class="names" type="checkbox">Kris</label>
+                    <label><input class="names" type="checkbox">Laurens</label>
+                    <label><input class="names" type="checkbox">Sean</label>
+                    <label><input class="names" type="checkbox">Zeger</label>
+                    <label><input class="names" type="checkbox">Luna</label>
+                    <label><input class="names" type="checkbox">Mitchell</label>
+                    <label><input class="names" type="checkbox">Kajtan</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label><input class="names" type="checkbox">Korneel</label>
+               
+                <div class="select-all-btn">
+                    <button id="select-all" type="button">Select All</button>
+                </div>
+            </div>
            </div>
             <div class="four-documents">
 
@@ -63,6 +94,7 @@
                         <select>
                             <option value="PDF">PDF</option>
                             <option value="TXT">TXT</option>
+                            <option value="IMG">IMG</option>
                         </select>
                         <button type="button">DOWNLOAD</button>
                         <button type="button">UPLOAD</button>
@@ -76,6 +108,7 @@
                         <select>
                             <option value="PDF">PDF</option>
                             <option value="TXT">TXT</option>
+                            <option value="IMG">IMG</option>
                         </select>
                         <button type="button">DOWNLOAD</button>
                         <button type="button">UPLOAD</button>
@@ -89,6 +122,7 @@
                         <select>
                             <option value="PDF">PDF</option>
                             <option value="TXT">TXT</option>
+                            <option value="IMG">IMG</option>
                         </select>
                         <button type="button">DOWNLOAD</button>
                         <button type="button">UPLOAD</button>
@@ -102,6 +136,7 @@
                         <select>
                             <option value="PDF">PDF</option>
                             <option value="TXT">TXT</option>
+                            <option value="IMG">IMG</option>
                         </select>
                         <button type="button">DOWNLOAD</button>
                         <button type="button">UPLOAD</button>
