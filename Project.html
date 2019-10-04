@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="resources/css/main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="resources/css/main.css">
     <title>Behind The Scenes</title>
 </head>
 <body>
     <main class="main-container">
-<!--nine-buttons-->        
+<!--nine-buttons-->    
+ 
         <div class="nine-buttons">
             <button class="users">Home</button>
             <button class="users">Event</button>
@@ -61,29 +62,29 @@
 
               <div class="userinfo">
                 
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Jing</label>
-                    <label><input class="names" type="checkbox">Katrien</label>
-                    <label><input class="names" type="checkbox">Aldo</label>
-                    <label><input class="names" type="checkbox">Mansur</label>
-                    <label><input class="names" type="checkbox">Axel</label>
-                    <label><input class="names" type="checkbox">Kris</label>
-                    <label><input class="names" type="checkbox">Laurens</label>
-                    <label><input class="names" type="checkbox">Sean</label>
-                    <label><input class="names" type="checkbox">Zeger</label>
-                    <label><input class="names" type="checkbox">Luna</label>
-                    <label><input class="names" type="checkbox">Mitchell</label>
-                    <label><input class="names" type="checkbox">Kajtan</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
-                    <label><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Jing</label>
+                    <label class="check"><input class="names" type="checkbox">Katrien</label>
+                    <label class="check"><input class="names" type="checkbox">Aldo</label>
+                    <label class="check"><input class="names" type="checkbox">Mansur</label>
+                    <label class="check"><input class="names" type="checkbox">Axel</label>
+                    <label class="check"><input class="names" type="checkbox">Kris</label>
+                    <label class="check"><input class="names" type="checkbox">Laurens</label>
+                    <label class="check"><input class="names" type="checkbox">Sean</label>
+                    <label class="check"><input class="names" type="checkbox">Zeger</label>
+                    <label class="check"><input class="names" type="checkbox">Luna</label>
+                    <label class="check"><input class="names" type="checkbox">Mitchell</label>
+                    <label class="check"><input class="names" type="checkbox">Kajtan</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
+                    <label class="check"><input class="names" type="checkbox">Korneel</label>
                
                 <div class="select-all-btn">
                     <button id="select-all" type="button">Select All</button>
@@ -149,7 +150,24 @@
                                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                                 </div>
                             </form>
-                            <button class="upload-btn" type="button">UPLOAD</button>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Upload file</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- Group part -->
                        <div id="Group" class="container tab-pane fade"><br>
@@ -203,7 +221,25 @@
                                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                                 </div>
                             </form>
-                            <button class="upload-btn" type="button">UPLOAD</button>     
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Upload</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Upload file</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form action=""><button type="button" class="btn btn-default" data-dismiss="modal">Save</button></form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                         
                     </div>
