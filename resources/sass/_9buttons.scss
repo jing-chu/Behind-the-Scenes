@@ -7,6 +7,12 @@
     background-color: $background-color;
     border-radius: 5px;
 }
+
+.users:hover{
+    background-color: $primary-color;
+    color:$background-color;
+}
+
 .twitter {
     height: 2rem;
     margin: 4px 0px 4px 0px;
@@ -39,7 +45,6 @@
 
 .tooltiptext{
     visibility: hidden;
-    width: 4rem;
     color:$white;
     background-color: $black;
     text-align: center;
