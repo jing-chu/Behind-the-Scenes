@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="resources/css/main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Behind The Scenes</title>
 </head>
 <body>
@@ -13,11 +17,11 @@
 <!--nine-buttons-->        
         <div class="nine-buttons">
             <button class="users">Home</button>
-            <button class="users">Contact</button>
+            <button class="users">Event</button>
             <button class="users">Administration</button>
-            <button class="users">Opening Hours</button>
+            <button class="users">Campus</button>
             <button class="users">Language</button>
-            <button class="users">Members</button>
+            <button class="users">Contact</button>
             <a href="#"><i class="fab fa-facebook">
                 <span class="tooltiptext">Facebook</span>
             </i></a>
@@ -29,9 +33,10 @@
             </i></a>
         </div> 
 <!--name-lists-->
-          <div class="name-lists">
+        <div class="name-lists">
               <div class="search">
                 <form action=""><input class="name" type="search" value="Search"></form>
+                <label class="sel-all"><input type="checkbox"name="select all"> Select all</label>
                 <ul style="list-style-type:none;">
                     <li><input type="checkbox" name="campus">Genk
                         <ul style="list-style-type:none;">
@@ -85,63 +90,125 @@
                 </div>
             </div>
            </div>
-            <div class="four-documents">
 
-                <div class="contract">
+<!--download and upload sections-->           
+            <div class="two-sections">
+
+                <div class="download-section">
                     <div class="icons"><i class="fas fa-folder-open"></i></div>
                     <div class="buttons">
-                        <h2>CONTRACT</h2>
-                        <select>
+                        <select class="select-1">
+                            <option value="Contract">Contract</option>
+                            <option value="CV">CV</option>
+                            <option value="Absence">Absence</option>
+                            <option value="Expenses">Expenses</option>
+                        </select>
+                        <select class="select-2">
                             <option value="PDF">PDF</option>
                             <option value="TXT">TXT</option>
                             <option value="IMG">IMG</option>
                         </select>
-                        <button type="button">DOWNLOAD</button>
-                        <button type="button">UPLOAD</button>
+                        <button class="download-btn" type="button">DOWNLOAD</button>
                     </div>
                 </div>
 
-                <div class="absence">
-                    <div class="icons"><i class="fas fa-file-import"></i></div>
-                    <div class="buttons">
-                        <h2>ABSENCE</h2>
-                        <select>
-                            <option value="PDF">PDF</option>
-                            <option value="TXT">TXT</option>
-                            <option value="IMG">IMG</option>
-                        </select>
-                        <button type="button">DOWNLOAD</button>
-                        <button type="button">UPLOAD</button>
+                <div class="upload-section">
+                <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#Campus">Campus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Group">Group</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Individual">Individual</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                <div class="tab-content">
+                     <!-- campus part -->
+                        <div id="Campus" class="container tab-pane active"><br>
+                            <form action="/action_page.php" method="get">
+                                <input class="input-type" list="campus-list" name="campus">
+                                <datalist id="campus-list">
+                                  <option value="Genk">
+                                  <option value="Brussels">
+                                  <option value="Antwerpen">
+                                </datalist>
+                                <input class="submit-btn" type="submit">
+                            </form>
+                            <select class="select-1">
+                                <option value="Contract">Contract</option>
+                                <option value="CV">CV</option>
+                                <option value="Absence">Absence</option>
+                                <option value="Expenses">Expenses</option>
+                            </select>
+                            <form>
+                                 <div class="form-group">
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                            </form>
+                            <button class="upload-btn" type="button">UPLOAD</button>
+                        </div>
+                        <!-- Group part -->
+                       <div id="Group" class="container tab-pane fade"><br>
+                            <form action="/action_page.php" method="get">
+                                <input class="input-type" list="group-list" name="group">
+                                <datalist id="group-list">
+                                  <option value="Easley">
+                                  <option value="Hooper">
+                                  <option value="Group 3">
+                                  <option value="Group 4">
+                                  <option value="Group 5">
+                                  <option value="Group 6">
+                                </datalist>
+                                <input class="submit-btn" type="submit">
+                              </form>
+                            <select class="select-1">
+                                <option value="Contract">Contract</option>
+                                <option value="CV">CV</option>
+                                <option value="Absence">Absence</option>
+                                <option value="Expenses">Expenses</option>
+                            </select>
+                            <form>
+                                <div class="form-group">
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                            </form>
+                            <button class="upload-btn" type="button">UPLOAD</button>
+                        </div>
+                        <!-- individual part -->
+                        <div id="Individual" class="container tab-pane fade"><br>
+                            <form action="/action_page.php" method="get">
+                                <input class="input-type" list="individual-list" name="group">
+                                <datalist id="individual-list">
+                                  <option value="Korneel">
+                                  <option value="Jing">
+                                  <option value="Kajtan">
+                                  <option value="Katrien">
+                                  <option value="Aldo">
+                                  <option value="Axel">
+                                </datalist>
+                                <input class="submit-btn" type="submit">
+                            </form>
+                            <select class="select-1">
+                                <option value="Contract">Contract</option>
+                                <option value="CV">CV</option>
+                                <option value="Absence">Absence</option>
+                                <option value="Expenses">Expenses</option>
+                            </select>
+                            <form>
+                                <div class="form-group">
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                            </form>
+                            <button class="upload-btn" type="button">UPLOAD</button>     
+                        </div>
+                        
                     </div>
+        
                 </div>
-
-               <div class="CV">
-                    <div class="icons"><i class="fas fa-address-book"></i></div>
-                    <div class="buttons">
-                        <h2>CV</h2>
-                        <select>
-                            <option value="PDF">PDF</option>
-                            <option value="TXT">TXT</option>
-                            <option value="IMG">IMG</option>
-                        </select>
-                        <button type="button">DOWNLOAD</button>
-                        <button type="button">UPLOAD</button>
-                    </div>    
-               </div>
-
-               <div class="expenses">
-                    <div class="icons"><i class="fas fa-coins"></i></div>
-                    <div class="buttons">
-                        <h2>EXPENSES</h2>
-                        <select>
-                            <option value="PDF">PDF</option>
-                            <option value="TXT">TXT</option>
-                            <option value="IMG">IMG</option>
-                        </select>
-                        <button type="button">DOWNLOAD</button>
-                        <button type="button">UPLOAD</button>
-                    </div>    
-               </div>
             </div>
     </main>
 </body>
